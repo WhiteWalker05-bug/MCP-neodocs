@@ -12,9 +12,9 @@ NeoDocs provides an automated backend server built on FastMCP to bridge patient 
 
 The service is organized around modular toolsets that expose discrete endpoints for data retrieval and evaluation:
 
-* **Scan Management (`list_test_results`)**: Retrieves stored at-home test scan history, supporting optional filtering by kit category (wellness vs. uti)[cite: 2].
-* **Longitudinal Trend Analysis (`get_result_trend`)**: Isolates a specific biomarker (e.g., pH, glucose, ketones, protein, leukocytes, nitrites) and maps its trajectory chronologically across prior scans[cite: 2].
-* **Automated Flagging (`check_out_of_range_results`)**: Evaluates the most current scan entry against defined threshold boundaries, returning flagged out-of-range metrics and safety notices[cite: 2].
+* **Scanning (`list_test_results`)**: Retrieves stored at-home test scan history, supporting optional filtering by kit category (wellness vs. uti)[cite: 2].
+* **Trend Analysis (`get_result_trend`)**: Isolates a specific biomarker (e.g., pH, glucose, ketones, protein, leukocytes, nitrites) and maps its trajectory chronologically across prior scans[cite: 2].
+* **Value analysis (`check_out_of_range_results`)**: Evaluates the most current scan entry against defined threshold boundaries, returning flagged out-of-range metrics and safety notices[cite: 2].
 * **Knowledge Retrieval (`search_health_guidance`)**: Performs keyword-based matching against markdown-formatted medical knowledge bases to extract concise, relevant definitions[cite: 2].
 
 ---
