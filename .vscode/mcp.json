@@ -1,0 +1,9 @@
+{
+  "servers": {
+    "neodocs": {
+      "type": "stdio",
+      "command": "C:\\Users\\Asus\\neodocs-mcp\\.venv\\Scripts\\python.exe",
+      "args": ["C:\\Users\\Asus\\neodocs-mcp\\server.py"]
+    }
+  }
+    }

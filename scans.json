@@ -1,0 +1,12 @@
+[
+  {"scan_id": "scan_001", "user_id": "user_1", "kit_type": "wellness", "scan_date": "2026-08-02T10:00:00Z",
+   "results": {"glucose": 0, "protein": 0, "ketones": 0, "ph": 6.5, "leukocytes": 0, "nitrites": 0}},
+  {"scan_id": "scan_002", "user_id": "user_1", "kit_type": "uti", "scan_date": "2026-08-30T10:00:00Z",
+   "results": {"ph": 6.0, "leukocytes": 2, "nitrites": 1}},
+  {"scan_id": "scan_003", "user_id": "user_1", "kit_type": "wellness", "scan_date": "2026-09-13T10:00:00Z",
+   "results": {"glucose": 0, "protein": 1, "ketones": 0, "ph": 7.0, "leukocytes": 0, "nitrites": 0}},
+  {"scan_id": "scan_004", "user_id": "user_1", "kit_type": "wellness", "scan_date": "2026-09-27T10:00:00Z",
+   "results": {"glucose": 1, "protein": 1, "ketones": 0, "ph": 6.5, "leukocytes": 0, "nitrites": 0}},
+  {"scan_id": "scan_005", "user_id": "user_1", "kit_type": "wellness", "scan_date": "2026-10-04T10:00:00Z",
+   "results": {"glucose": 0, "protein": 2, "ketones": 0, "ph": 7.0, "leukocytes": 0, "nitrites": 0}}
+]
