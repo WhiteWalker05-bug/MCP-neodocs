@@ -2,7 +2,7 @@
 
 ## Overview
 
-NeoDocs provides an automated backend server built on FastMCP to bridge patient health scan logs with LLM-powered interfaces. Designed for seamless querying, this utility streamlines how health parameters, trend histories, and diagnostic knowledge bases are accessed and interpreted by AI agents.
+The following project  provides an automated backend server built on FastMCP to bridge patient health scan logs with LLM-powered interfaces. This utility streamlines how health parameters, trend histories, and diagnostic knowledge bases are accessed and interpreted by AI agents.
 
 > **Disclaimer:** All test kits, scans, and health knowledge files included in this repository are mock data intended exclusively for project demonstration purposes. They do not constitute professional medical advice, diagnosis, or treatment.
 
@@ -52,3 +52,41 @@ neodocs-mcp/
 ├── pyproject.toml         # Project metadata and dependencies configuration
 ├── uv.lock                # Locked dependency resolution versions
 └── README.md              # Project documentation
+
+
+
+
+
++-----------------------+      +-------------------+      +------------------+
+|      User             | ---> |  AI host          | ---> |  MCP server      |
+| (Patient / Customer)  |      |  (Claude Desktop  |      |  server.py       |
++-----------------------+      |   / VS Code)      |      +------------------+
+                               +-------------------+              |
+                                                                  v
+                                                        +------------------+
+                                                        | List scans       |
+                                                        | list_test_results|
+                                                        +------------------+
+                                                                  |
+                                                                  v
+                                                        +------------------+
+                                                        | Scan Data        |
+                                                        | scans.json       |
+                                                        +------------------+
+
+                                                        +------------------+
+                                                        | Check ranges     |
+                                                        | check_out_range  |
+                                                        +------------------+
+                                                                  |
+                                                                  v
+                                                        +------------------+
+                                                        | Search guidance  |
+                                                        | search_health_...|
+                                                        +------------------+
+                                                                  |
+                                                                  v
+                                                        +------------------+
+                                                        | Knowledge Base   |
+                                                        | knowledge_base.md|
+                                                        +------------------+
